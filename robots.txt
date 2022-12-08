@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://sportshighlights.netlify.app/sitemap.xml
+Sitemap: https://mxplayermovies.netlify.app/sitemap.xml
