@@ -235,35 +235,119 @@ f.addEventListener('submit', submitted);
 			<div class="item home__cover" data-bg="img/home/home__bg4.jpg"></div>
 		</div>
 		<!-- end home bg -->
-		<section class="content">
-			<div class="content__head">
-				<div class="container">
-					<div class="row">
-				
-						<div class="col-12">
-							<!-- content title -->
+	<!-- end home bg -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						
+						<section class="content">
+							<div class="content__head">
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+						
+						<!-- content title -->
+						
+						<!-- end content title -->
+
+						<!-- content tabs nav -->
+						<style>
+							.dropbtn {
+							  background-color: #3498DB;
+							  color: white;
+							  padding: 16px;
+							  font-size: 16px;
+							  border: none;
+							  cursor: pointer;
+							}
 							
-							<!-- end content title -->
-	
-							<!-- content tabs nav -->
-							<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active"  href="index" role="tab" aria-controls="tab-1" aria-selected="true" >NEW RELEASES</a>
-								</li>
-	
-								<li class="nav-item">
-									<a class="nav-link"  href="index" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a>
-								</li>
-	
-								<li class="nav-item">
-									<a class="nav-link"  href="tv-series" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a>
-								</li>
-	
-								<li class="nav-item">
-									<a class="nav-link"  href="adult" role="tab" aria-controls="tab-4" aria-selected="false">ADULT</a>
-								</li>
-							</ul>
-						<p></p>
+							.dropbtn:hover, .dropbtn:focus {
+							  background-color: #2980B9;
+							}
+							
+							.dropdown {
+							  position: relative;
+							  display: inline-block;
+							}
+							
+							.dropdown-content {
+							  display: none;
+							  position: absolute;
+							  background-color: #f1f1f1;
+							  min-width: 160px;
+							  overflow: auto;
+							  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+							  z-index: 1;
+							}
+							
+							.dropdown-content a {
+							  color: black;
+							  padding: 12px 16px;
+							  text-decoration: none;
+							  display: block;
+							}
+							
+							.dropdown a:hover {background-color: #ddd;}
+							
+							.show {display: block;}
+							</style>
+						
+							<div class="dropdown">
+							  <button onclick="myFunction()" class="dropbtn">Menu</button>
+							  <div id="myDropdown" class="dropdown-content">
+								<a href="/index">Home</a>
+								<a href="/hollywood">Hollywood</a>
+								<a href="/bollywood">Bollywood</a>
+								<a href="/adult">Adult</a>
+								<a href="/tv-series">TV-Series</a>
+								
+								
+							  </div>
+							</div>
+							
+							<script>
+							/* When the user clicks on the button, 
+							toggle between hiding and showing the dropdown content */
+							function myFunction() {
+							  document.getElementById("myDropdown").classList.toggle("show");
+							}
+							
+							// Close the dropdown if the user clicks outside of it
+							window.onclick = function(event) {
+							  if (!event.target.matches('.dropbtn')) {
+								var dropdowns = document.getElementsByClassName("dropdown-content");
+								var i;
+								for (i = 0; i < dropdowns.length; i++) {
+								  var openDropdown = dropdowns[i];
+								  if (openDropdown.classList.contains('show')) {
+									openDropdown.classList.remove('show');
+								  }
+								}
+							  }
+							}
+							</script>
+						
+					
+					
+							<div class="col-12">
+							<h1 class="details__title"></h1>
+							
+							</div>
+							<!-- end title -->
+							<div class="col-12">
+							<h1 class="details__title"></h1>
+							</div>
+							<div class="col-12">
+								<h1 class="details__title"></h1>
+								
+								</div>
+								<!-- end title -->
+								<div class="col-12">
+								<h1 class="details__title"></h1>
+								</div>
+							</div></div></div></div></div>
 							
 	<!-- expected premiere -->
 	<section class="section section--bg" data-bg="img/section/section.jpg">
