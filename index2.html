@@ -212,30 +212,7 @@ box-shadow: 0px 0px 15px 5px #e1edf2;
 				<div class="row">
 					<div class="col-12">
 						<!-- header search -->	
-							<!-- header search -->	
-							<center>
-								<form id="form"> 							 
-									<input type="search" id="query" name="q" placeholder="Search for a movie, TV Series that you are looking for">
-									<button><span style="font-family: play; color: rgb(247, 7, 7); font-size: x-large; font-weight: bold;">Search</button></span>
-								  </form>
-								</center>
-								<p></p>
-				<!-- end header search -->
-			<script>
-		const f = document.getElementById('form');
-		const q = document.getElementById('query');
-		const google = 'https://www.google.com/search?q=site%3A+';
-		const site = 'https://mxplayermovies.netlify.app/';
-		
-		function submitted(event) {
-		  event.preventDefault();
-		  const url = google + site + '+' + q.value;
-		  const win = window.open(url, '_blank');
-		  win.focus();
-		}
-		
-		f.addEventListener('submit', submitted);
-		</script>
+				
 	</header>
 	<!-- end header -->
 
@@ -365,6 +342,36 @@ window.onclick = function(event) {
 		<div class="col-12">
 		<h1 class="details__title"></h1>
 		</div>
+		<style>
+		.box{
+			width: 100%;
+			text-align:center;
+		}
+		</style>
+								 <div class="box">
+								<form id="form"> 							 
+								<input type="search" id="query" name="q" placeholder="Search for a movie, TV Series that you are looking for">
+								<button><span style="font-family: play; color: rgb(247, 7, 7); font-size: x-large; font-weight: bold;">Search</button></span>
+							  </form>
+								 </div>
+							<p></p>
+			<!-- end header search -->
+		<script>
+		const f = document.getElementById('form');
+		const q = document.getElementById('query');
+		const google = 'https://www.google.com/search?q=site%3A+';
+		const site = 'https://mxplayermovies.netlify.app/';
+		
+		function submitted(event) {
+		event.preventDefault();
+		const url = google + site + '+' + q.value;
+		const win = window.open(url, '_blank');
+		win.focus();
+		}
+		
+		f.addEventListener('submit', submitted);
+		</script>
+					
 				<!-- section title -->
 				<div class="col-12">
 					<h2 class="section__title">Watch Latest Movies</h2>
