@@ -65,7 +65,6 @@
 <script type="text/javascript" data-cfasync="false" async src="https://platform-api.sharethis.com/js/sharethis.js#property=636a60cae81dbd0012a64501&product=sticky-share-buttons&source=platform" async="async"></script>
 <!-- END SHAREAHOLIC CODE -->
 
-
 <script type="text/javascript" src="https://fdyn.pubwise.io/script/f5634f32-a2ed-4af5-857a-abfee3bec577/v1/pre_pws.js?type=default"></script>
 <script type="text/javascript" src="https://fdyn.pubwise.io/script/f5634f32-a2ed-4af5-857a-abfee3bec577/v1/pws.js?type=default" async></script>
 
@@ -88,7 +87,43 @@ href="https://mxplayermovies.netlify.app/"/>
 <link rel="alternate" hreflang="x-default" 
 href="https://mxplayermovies.netlify.app/"/>
 
-
+<!--<script type="application/ld+json" class="rank-math-schema">
+	{
+		"@context": "https://schema.org",
+		"@graph": [{
+			"@type": "Person",
+			"@id": "https://mxplayermovies.netlify.app/#person",
+			"name": "Mxplayer Movies™ | Watch Latest Movies and TV-Series Online Free",
+			"url": "https://mxplayermovies.netlify.app"
+		}, {
+			"@type": "WebSite",
+			"@id": "https://mxplayermovies.netlify.app/#website",
+			"url": "https://mxplayermovies.netlify.app",
+			"name": "Mxplayer Movies™ | Watch Latest Movies and TV-Series Online Free",
+			"publisher": {
+				"@id": "https://mxplayermovies.netlify.app/#person"
+			},
+			"inLanguage": "en-US",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://mxplayermovies.netlify.app/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}, {
+			"@type": "CollectionPage",
+			"@id": "https://mxplayermovies.netlify.app/#webpage",
+			"url": "https://mxplayermovies.netlify.app/",
+			"name": "Mxplayer Movies™ | Watch Latest Movies and TV-Series Online Free",
+			"about": {
+				"@id": "https://mxplayermovies.netlify.app/#person"
+			},
+			"isPartOf": {
+				"@id": "https://mxplayermovies.netlify.app/#website"
+			},
+			"inLanguage": "en-US"
+		}]
+	}
+</script>-->
 <script type="application/ld+json" class="aioseo-schema">
     {"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/mxplayermovies.netlify.app\/#website","url":"https:\/\/mxplayermovies.netlify.app\/","name":"Mxplayer Movies™ | Watch Latest Movies and TV-Series Online Free","description":"Watch movies online on Mxplayer Movies™, Download your favorite movies and tv-series in HD without registration. Watch movies 24x7.","inLanguage":"en-US","publisher":{"@id":"https:\/\/mxplayermovies.netlify.app\/#person"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/mxplayermovies.netlify.app\/?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"Person","@id":"https:\/\/mxplayermovies.netlify.app\/#person","name":"Mxplayer Movies™","image":{"@type":"ImageObject","@id":"https:\/\/mxplayermovies.netlify.app\/#personImage","url":"https:\/\/secure.gravatar.com\/avatar\/3dd4d1e54076f00bfffa4fb30a8e99a9?s=96&d=wavatar&r=g","width":96,"height":96,"caption":"mxplayermovies"}},{"@type":"BreadcrumbList","@id":"https:\/\/mxplayermovies.netlify.app\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/mxplayermovies.netlify.app\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/mxplayermovies.netlify.app\/","name":"Home","description":"Watch movies online on Mxplayer Movies™, Download your favorite movies and tv-series in HD without registration. Watch the latest movies online.","url":"https:\/\/mxplayermovies.netlify.app\/"}}]},{"@type":"CollectionPage","@id":"https:\/\/mxplayermovies.netlify.app\/#collectionpage","url":"https:\/\/mxplayermovies.netlify.app\/","name":"Mxplayer Movies™ | Watch Latest Movies and TV-Series Online Free","description":"Watch movies online on Mxplayer Movies™, Download your favorite movies and tv-series in HD without registration. Watch the latest movies online.","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/mxplayermovies.netlify.app\/#website"},"breadcrumb":{"@id":"https:\/\/mxplayermovies.netlify.app\/#breadcrumblist"},"about":{"@id":"https:\/\/mxplayermovies.netlify.app\/#person"}}]}
 </script>
@@ -203,30 +238,35 @@ box-shadow: 0px 0px 15px 5px #e1edf2;
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						
 						<!-- header search -->	
-						<center>
+					<center>
 						<form id="form"> 
+							 
 							<input type="search" id="query" name="q" placeholder="Search for a movie, TV Series that you are looking for">
 							<button><span style="font-family: play; color: rgb(247, 7, 7); font-size: x-large; font-weight: bold;">Search</button></span>
 						  </form>
 						</center>
 						<p></p>
 		<!-- end header search -->
-		<script>
-		const f = document.getElementById('form');
+	<script>
+const f = document.getElementById('form');
 const q = document.getElementById('query');
 const google = 'https://www.google.com/search?q=site%3A+';
-const site = 'mxplayermovies.netlify.app/';
+const site = 'https://mxplayermovies.netlify.app/';
 
 function submitted(event) {
   event.preventDefault();
-  const url = google + site + '+' + q.value;/
+  const url = google + site + '+' + q.value;
   const win = window.open(url, '_blank');
   win.focus();
-}	
+}
 
 f.addEventListener('submit', submitted);
 </script>
+
+
+	
 	</header>
 	<!-- end header -->
 
